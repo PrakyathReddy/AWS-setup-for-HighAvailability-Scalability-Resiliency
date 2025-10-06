@@ -52,6 +52,8 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 #### Step 5: Setup load balancer
 Create application load balancer
 Create target group
-
+![alb-target-group](alb-group.png)
 ALB successfully configured and available for public access
 ![alb](alb-access.png)
+
+// deleted load balancer, target groups, ec2 instances, ASG, ASG launch template, VPC, Network interfaces, NAT Gateways
