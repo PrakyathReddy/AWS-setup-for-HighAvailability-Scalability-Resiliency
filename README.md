@@ -15,4 +15,11 @@ Step 1: Create VPC. Make sure to select 1 NAT Gateway per AZ.
 ![vpc2](VPC.png)
 VPC created with 4 subnets in 2 AZs and a NAT gateway in each AZ
 
-Step 2: Create AutoScaling Group
+Step 2: Create AutoScaling Group <br>
+Create launch template - make sure to include SG that allows inbound traffic on port 22 for SSH and custom TCP Port 8000
+
+While configuring AutoScaling Group, select the newly created VPC, choose 2 private subnets. 
+
+Verify that 2 ec2 instances have been created automatically, one in each AZ
+
+
