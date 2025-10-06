@@ -8,3 +8,4 @@
 
 Deployed servers only in private subnets for additional security. Servers recieve requests through Load Balancer. Servers connect to the internet using NAT Gateway. To improve resiliency, deployed NAT Gateways to both AZ's.
 
+![public-private-subnet-architecture](public-private-subnet-architecture.png)
