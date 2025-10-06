@@ -34,20 +34,24 @@ pem copied into the bastion host
 
 Able to connect to the instances in private subnet using their private IP's
 
-#### Step 4: Install basic application in one of the instances in private subnet 
+#### Step 4: Install basic application in one of the instances in private subnet
 
 $ vi index.html
 <!DOCTYPE html>
 <html>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1>My First Instance</h1>
 
 </body>
 </html>
 
-$ python3 -m http.server 8000
+$ nohup python3 -m http.server 8000 &
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
+#### Step 5: Setup load balancer
+Create application load balancer
+Create target group
 
+ALB successfully configured and available for public access
+![alb](alb-access.png)
